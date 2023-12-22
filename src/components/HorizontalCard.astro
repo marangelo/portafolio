@@ -1,13 +1,24 @@
 ---
-const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
+const { 
+  title, 
+  img, 
+  desc, 
+  url, 
+  badge, 
+  tags, 
+  target = "_blank" ,
+  tech,
+} = Astro.props;
+
 import { Image } from "astro:assets";
+
 const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
 ---
 
 <div
   class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]"
 >
-  <a href={url} target={target}>
+  <a href={url} target={target}> 
     <div class="hero-content flex-col md:flex-row">
       {
         img && (
@@ -38,14 +49,16 @@ const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
           }
         </div>
         <div class="mt-4 flex flex-wrap gap-1">
+          {
+            tech &&
+            tech.map((techItem) => (
+              <span class="rounded border border-indigo-500 bg-indigo-500 px-2.5 py-0.5 text-xs text-white">
+                {techItem}
+          </span>
+            ))
+          }
 
-          <span class="rounded border border-indigo-500 bg-indigo-500 px-2.5 py-0.5 text-xs text-white">
-            Tech 01
-          </span>
-    
-          <span class="rounded border border-indigo-500 bg-indigo-500 px-2.5 py-0.5 text-xs text-white" >
-            Tech 02
-          </span>
+          
       </div>
     </div>
   </a>

@@ -1,57 +1,59 @@
 ---
-title: "Demo Post 3"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 12 2022"
-heroImage: "/post_img.webp"
-badge: "Demo badge"
-tags: ["rust","tokio"]
+title: "Understanding Servers and Their Services"
+description: "A server is a computer that provides data or services to other computers over a network."
+pubDate: "Dec 20 2023"
+heroImage: "/me.webp"
+tags: ["linux","servers"]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer
-malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas
-pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse
-platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada
-fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea
-dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst
-quisque sagittis purus sit amet.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum
-quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet.
-Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus.
-Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit
-ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt
-dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus
-arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed
-tempus urna et pharetra pharetra massa massa ultricies mi.
+A **server** is a computer that provides data or services to other computers over a network. It can be physical or virtual, and both its hardware and software components contribute to its functionality. Servers play a crucial role in offering various services to organizations, and they are characterized by unique operating systems and hardware configurations.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam
-sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec.
-Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna
-fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et
-egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel
-turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra
-nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim
-praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus
-egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam
-ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor
-purus non. Amet dictum sit amet justo donec enim.
+## Components of a Server:
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut
-consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra.
-Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor
-dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor
-dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque
-eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices
-tincidunt arcu. Id cursus metus aliquam eleifend mi.
+1. **Operating System (OS):**
+   - Servers differ from basic computers in their specialized OS designed to provide services over a network.
+   - Major server OS includes Microsoft server, Apache server, and Linux server.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus
-imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu
-cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt
-dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat
-sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida.
-Egestas integer eget aliquet nibh praesent tristique magna.
+2. **Hardware:**
+   - Hardware requirements vary based on application.
+   - Throughput is a key concern, encompassing factors like CPU, RAM, BUS speed, and hard drive performance.
+   - Servers often have higher RAM and networking requirements compared to desktop computers.
+
+## Services Provided by Servers:
+
+1. **Directory Services:**
+   - Manages and provides access to information in a computer operating system's directory.
+   - Example: Microsoft Active Directory.
+
+2. **DNS (Domain Name System):**
+   - Translates domain names into IP addresses for internet communication.
+
+3. **File Server:**
+   - Controls access to separately stored files in a multi-user system.
+
+4. **Index/Search Service:**
+   - Inventories and organizes files for easy search, analogous to Google's indexing.
+
+5. **Web Server:**
+   - Hosts and manages websites, critical for serving web content.
+
+6. **Database Service:**
+   - Organizes information for easy access, management, and updating.
+
+7. **Email Service:**
+   - Allows sending, receiving, and reviewing emails; may include additional features like calendaring.
+
+8. **Management Server:**
+   - Monitors and resolves performance or stability issues with servers; manages a network of servers.
+
+9. **Firewall Service:**
+   - Turns servers into security apparatus by monitoring and blocking inappropriate network traffic.
+
+10. **Print Service:**
+    - Allows multiple employees to access a single printer; manages multiple printers.
+
+11. **Virtualization Service:**
+    - Enables multiple server instances on a single physical system, improving productivity and efficiency.
+
+Servers, with their diverse services, are integral to modern computing infrastructure, supporting various organizational needs and enhancing resource utilization through virtualization.

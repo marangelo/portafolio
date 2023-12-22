@@ -1,16 +1,37 @@
 ---
-title: "Demo Post 2"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 11 2022"
-heroImage: "/post_img.webp"
+title: "Why do we use Laravel"
+description: "Laravel, a renowned PHP framework, boasts numerous security features, making it a preferred choice among developers."
+pubDate: "Dec 21 2023"
+heroImage: "/laravel.webp"
+tags: ["php",'laravel']
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+Laravel, a renowned PHP framework, boasts numerous security features, making it a preferred choice among developers. Its seamless integration with token forms and AJAX calls, coupled with a robust caching system, contributes to its functionality, clarity, and simplicity. Laravel excels in personalized web application development, enhancing coding efficiency and reducing development time.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+**Advantages for Entrepreneurs and Developers:**
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+1. **Authentication and Authorization Systems:**
+   - Laravel simplifies authentication and authorization, offering easy control over resource access. It streamlines authentication logic, earning it the title of a PHP authentication framework, ensuring secure user data management.
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+2. **Integration with Mail Services:**
+   - Laravel's integration with the 'Swiftmailer' library facilitates clean API configurations for individual email accounts. It supports various drivers for rapid message sending via cloud-based or local services, enhancing customization with a templating system for emails.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+3. **Fixing Technical Vulnerabilities:**
+   - Laravel addresses security threats, including cross-site request forgery and SQL injections, offering an advanced codebase that instills confidence in business owners about the security of their web applications.
+
+4. **URL Routing Configuration:**
+   - Laravel's built-in file configuration enables elegant definition of accessible and identifiable routes, enhancing user experience by displaying linked content within the current webpage.
+
+5. **Separation of "Business Logic Code" from "Presentation Code":**
+   - Following the Model View Controller (MVC) architecture, Laravel ensures clarity between business logic and application presentation, establishing itself as the ideal PHP framework for web applications.
+
+6. **Eloquent ORM:**
+   - Laravel's Eloquent ORM simplifies working with database objects and relationships, utilizing industry-standard conventions with minimal configurations.
+
+7. **Message Queue System:**
+   - Laravel manages background tasks efficiently with a built-in queue system and a simple API, allowing users to run tasks asynchronously for improved user experience.
+
+8. **Scheduling Tasks: Configuration and Management:**
+   - Laravel's scheduling functionality provides a user-friendly way to create custom scheduled tasks without the need for system-level configurations, eliminating the necessity to follow Cron job syntax.
+
+These advantages position Laravel as a powerful and secure PHP framework, making it a top choice for both entrepreneurs and developers in custom software development. The framework's widespread appreciation is evident from the global community of over 35,000 Laravel developers.

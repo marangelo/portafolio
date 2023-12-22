@@ -11,9 +11,10 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   <HorizontalCard
     title="Credinstantes"
     img="/app-01.png"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="Manages the portfolio of loans and the corresponding payments applied to these loans."
     url="http://app.credinstantes.com/"
     badge="NEW"
+    tech={['HTML', 'BOOSTRAP', 'LARAVEL','MYSQL']}
   />
   <div class="divider my-0"></div>
   <HorizontalCard
@@ -21,6 +22,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     img="/app-02.png"
     desc="Various dashboards that display relevant information for operational decision-making."
     url="https://gnet.gumacorp.com"
+    tech={['HTML', 'BOOSTRAP', 'LARAVEL','MYSQL','SQLSERVER','DOCKER']}
   />
   <div class="divider my-0"></div>
   <HorizontalCard
@@ -28,6 +30,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     img="/app-03.png"
     desc="Platform for customer service, where orders are received and access is provided to inventory, customers, and other statistics."
     url="https://sac.gumacorp.com"
+    tech={['HTML', 'BOOSTRAP', 'LARAVEL','MYSQL','SQLSERVER','DOCKER']}
   />
 
   <div>
@@ -35,26 +38,28 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   </div>
 
   <HorizontalCard
-    title="Nube Privada Con Docker"
+    title="Private Cloud with Docker"
     img="/app-04.png"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="A solution to provide user information access across different areas of the company."
     url="https://cloud.gumacorp.com"
+    tech={['DOCKER COMPOSE', 'UBUNTU SERVER', 'NEXT CLOUD', 'MARIADB']}
   />
 
   <HorizontalCard
-    title="Documentacion de Proyecto Movil"
+    title="Mobile Project Documentation"
     img="/app-05.png"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="Manual for users of the internal mobile application and its various modules."
     url="https://docs.gumacorp.com/"
+    tech={['DOCKER COMPOSE', 'UBUNTU SERVER', 'WIKIJS']}
   />
 
   <HorizontalCard
     title="Media Center"
     img="/app-06.png"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="My private Multimedia server, for storing movies and series and watching them through various means."
     url="http://tv.endscom.com"
+    tech={['DOCKER COMPOSE', 'UBUNTU SERVER', 'JELLYFIN']}
   />
-
 
 
   <div>
@@ -63,24 +68,31 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
  
   <HorizontalCard
-    title="Indicadores de Produccion"
+    title="Production Metrics"
     img="/app-07.png"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="https://apps.gumacorp.com/produccion/"
+    desc="Provides different metrics for the internal production of the company, from production orders to costs."
+    url="https://apps.gumacorp.com/production/"
+    tech={['HTML', 'BOOTSTRAP', 'LARAVEL', 'MYSQL', 'SQLSERVER', 'DOCKER']}
+  />
 
-  />
   <div class="divider my-0"></div>
+
   <HorizontalCard
-    title="Kardex"
+    title="Inventory Management (Kardex)"
     img="/app-08.png"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="https://apps.gumacorp.com/Inventario/"
+    desc="Manages the inventory of items, their entries, and exits directly from the production line."
+    url="https://apps.gumacorp.com/inventory/"
+    tech={['HTML', 'BOOTSTRAP', 'LARAVEL', 'MYSQL', 'DOCKER']}
   />
+
   <div class="divider my-0"></div>
+
   <HorizontalCard
-    title="Estadisticas Generales"
+    title="General Statistics"
     img="/app-09.png"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="https://apps.gumacorp.com/Estadisticas/"
+    desc="Provides sales metrics for different sales teams within the company."
+    url="https://apps.gumacorp.com/statistics/"
+    tech={['HTML', 'BOOTSTRAP', 'LARAVEL', 'MYSQL', 'SQLSERVER', 'DOCKER']}
   />
+
 </BaseLayout>

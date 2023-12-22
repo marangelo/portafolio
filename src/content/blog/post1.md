@@ -1,56 +1,49 @@
 ---
-title: "Demo Post 1"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 10 2022"
-heroImage: "/post_img.webp"
-tags: ["tokio"]
+title: "What Fuck is Docker?"
+description: "Docker is an open-source containerization platform that enables developers to build, run, and deploy applications quickly"
+pubDate: "Dec 22 2023"
+heroImage: "/docker.webp"
+badge: "New"
+tags: ["docker"]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer
-malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas
-pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse
-platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada
-fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea
-dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst
-quisque sagittis purus sit amet.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum
-quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet.
-Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus.
-Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit
-ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt
-dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus
-arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed
-tempus urna et pharetra pharetra massa massa ultricies mi.
+Docker is an open-source containerization platform designed to facilitate the rapid development, deployment, and execution of applications. It achieves this by packaging entire applications, along with their libraries, configurations, and dependencies, into containers that can be easily deployed across various environments.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam
-sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec.
-Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna
-fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et
-egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel
-turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra
-nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim
-praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus
-egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam
-ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor
-purus non. Amet dictum sit amet justo donec enim.
+**Why use Docker?**
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut
-consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra.
-Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor
-dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor
-dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque
-eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices
-tincidunt arcu. Id cursus metus aliquam eleifend mi.
+Docker addresses the common issue of "It works on my machine" by effectively managing application dependencies and configurations. It streamlines the DevOps process by supporting the building and deployment of distributed microservices through continuous integration and continuous deployment pipelines, saving significant time in the software development lifecycle. Docker utilizes containers as a unit of software, encapsulating application code and dependencies for quick and isolated execution.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus
-imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu
-cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt
-dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat
-sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida.
-Egestas integer eget aliquet nibh praesent tristique magna.
+**Benefits of Docker:**
+
+- *Application Portability:* Docker allows applications to run on physical machines, virtual machines, or different cloud providers without modification, ensuring portability.
+- *Faster Delivery and Deployment:* Docker streamlines the building and deployment of application images at every stage of the deployment process.
+- *Scalability:* Docker facilitates easy scaling of application instances across diverse environments.
+- *Isolation:* Applications run in isolated environments within containers, safeguarding dependencies and configurations.
+- *Security:* Docker ensures containerized applications are isolated from each other, incorporating various security layers and tools.
+- *High Performance:* Compared to virtual machines (VMs), Docker is generally faster and requires fewer resources.
+- *Version Control Management:* Docker offers versioning capabilities, allowing the tracking and rollback of container versions as needed.
+
+**Difference between Virtualization and Containerization:**
+
+Virtualization involves creating virtual versions of components at the same abstraction level, including computer hardware platforms, storage devices, and network resources. Containerization, on the other hand, is OS-level or application-level virtualization that allows software applications to run in isolated environments known as containers, independent of the underlying infrastructure.
+
+**Docker Tools and Terms:**
+
+1. *Docker Client:* Users interact with the Docker client through the Command-Line Interface (CLI) using various commands such as `docker run` and `docker build`. It communicates with the Docker daemon server through REST APIs.
+
+2. *Docker Image:* A Docker image is created from a Dockerfile, a text file containing instructions for building the image.
+
+3. *Docker Container:* A running instance of a Docker image that operates in an isolated environment.
+
+4. *Docker Hub:* A cloud-based service for pushing and pulling different Docker images.
+
+5. *Docker Registry:* A system for storing, distributing, and managing various versions of Docker images.
+
+In summary, Docker provides a comprehensive containerization solution with benefits such as portability, scalability, security, and efficient version control management.
+
+Happy Learning!
+
+**References**
+
+"What is Docker?" in Medium. [This](https://medium.com/search?q=docker+what+is)
