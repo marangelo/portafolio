@@ -70,7 +70,7 @@ todas las aplicaciones web y otros servicios , Adquieriendo un dominio y apuntan
 
 ¡Listo! Ahora tengo un sistema Ubuntu Server con Docker y Docker Compose instalados y listos para usar. 
 
-## Instalación de WEB Server con php7.4 + nginx + sqlsrv Server
+## Instalación de WEB Server con php7.4 + nginx + sqlsrv Server con SSL
 
 Principalmente uso un Stack con Laravel 7 y mysql 5.7 , me di a la tarea de prepara un docker compose para que dentro del servidor
 se corran todos estos contenedores y asi estanderizar mi Ambiente de desarrollo como el de produccion, este es el docker compose que use: 
@@ -244,4 +244,53 @@ las referencia de la documentacion de la imagen que uso para las aplicaciones.
 
 **Referencia:** [Repositorio de Docker PHP por kool-dev](https://github.com/kool-dev/docker-php)
 
-Saluditos
+Ahora queria tener SSL y lei que con letsencrypt y nginx se podia tener, me di a la tarea de usarlo, con lo que llegue a usar
+Nginx Proxy Manager y asi manejar varios dominio y que los certificados se Renueve automaticamente, aqui les comparto el que use:
+
+```yaml
+version: '3'
+services:
+  app:
+    image: 'jc21/nginx-proxy-manager:latest'
+    container_name: cn_nginx-proxy-manage 
+    ports:
+      - '80:80'
+      - '81:81'
+      - '443:443'
+    volumes:
+      - ./config.json:/app/config/production.json
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+  db:
+    image: 'jc21/mariadb-aria:10.4.15'
+    container_name: cn_mariadb-nginx
+    environment:
+      MYSQL_ROOT_PASSWORD: 'npm'
+      MYSQL_DATABASE: 'npm'
+      MYSQL_USER: 'npm'
+      MYSQL_PASSWORD: 'npm'
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+```
+
+Y el contenido del archivo `.config.json`:
+```
+{
+  "database": {
+    "engine": "mysql",
+    "host": "db",
+    "name": "npm",
+    "user": "npm",
+    "password": "npm",
+    "port": 3306
+  }
+}
+```
+
+y con esto tendria ya el contenedor de los certificados corriendo.
+
+por ultimo pero esto ya varia dependiendo del proveedor  porque yo me pille el dominio , apunete el DNS a este Serverde Y listo ya tengo sitio WEB.
+
+
+pero como nunca paro de aprender , me monte MINIO Object Store en Docker 
+pero Coming soon ... 
