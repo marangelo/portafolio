@@ -1,5 +1,5 @@
 ---
-title: "What Fuck is Docker?"
+title: "What the fuck is Docker?"
 description: "Docker is an open-source containerization platform that enables developers to build, run, and deploy applications quickly"
 pubDate: "Dec 22 2023"
 heroImage: "/docker.webp"
