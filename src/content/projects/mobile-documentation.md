@@ -1,10 +1,10 @@
 ---
-title: "Credinstante"
-description: "Manages the portfolio of loans and the corresponding payments applied to these loans."
-pubDate: "Dec 26 2023"
-heroImage: "/app-01.png"
-badge: "New"
-tags: ['HTML', 'BOOSTRAP', 'LARAVEL','MYSQL']
+title: "Mobile Project Documentation"
+description: "A solution to provide user information access across different areas of the company."
+pubDate: "Dec 22 2023"
+heroImage: "/app-05.png"
+
+tags: ['DOCKER COMPOSE', 'UBUNTU SERVER', 'NEXT CLOUD', 'MARIADB']
 ---
 
 

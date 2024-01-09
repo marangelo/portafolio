@@ -1,10 +1,10 @@
 ---
-title: "Credinstante"
-description: "Manages the portfolio of loans and the corresponding payments applied to these loans."
-pubDate: "Dec 26 2023"
-heroImage: "/app-01.png"
-badge: "New"
-tags: ['HTML', 'BOOSTRAP', 'LARAVEL','MYSQL']
+title: "GMV Gestor Movil de Ventas"
+description: "Through a Navita App on Android, the pre-sale order is sent to a WEB portal."
+pubDate: "Dec 22 2023"
+heroImage: "/app-10.png"
+
+tags: ['ANDROID', 'JAVA', 'PHP','MYSQL','SQLSERVER','DOCKER']
 ---
 
 
