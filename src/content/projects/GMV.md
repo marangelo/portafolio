@@ -1,7 +1,7 @@
 ---
 title: "GMV Gestor Movil de Ventas"
 description: "Through a Navita App on Android, the pre-sale order is sent to a WEB portal."
-pubDate: "Oct 27 2023"
+pubDate: "Oct 20 2023"
 heroImage: "/app-10.png"
 tags: ['ANDROID', 'JAVA', 'PHP','MYSQL','SQLSERVER','DOCKER']
 ---

@@ -5,7 +5,7 @@ import { getCollection } from "astro:content";
 
 export async function getStaticPaths({ paginate }) {
   const projects = await getCollection("projects");
-  projects.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  projects.sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
   return paginate(projects, { pageSize: 10 });
 }
 
@@ -35,9 +35,9 @@ const { page } = Astro.props;
               target="_self"
               badge={project.data.badge}
               tags={project.data.tags}
+              pubDate={project.data.pubDate}
             />
-            <div class="divider my-0" />
-          </>
+            <div class="divider my-0" /></>
         ))}
       </ul>
     )

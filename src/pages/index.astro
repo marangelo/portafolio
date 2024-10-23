@@ -2,9 +2,12 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-const last_posts = posts.slice(0, 3);
+const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const projects = (await getCollection("projects")).sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate));
+
+const last_posts    = posts.slice(0, 3);
+const last_projects = projects.slice(0, 4);
 
 
 ---
@@ -75,39 +78,23 @@ const last_posts = posts.slice(0, 3);
   <div>
     <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
   </div>
-
-  <HorizontalCard
-    title="Credinstante"
-    img="/app-01.png"
-    desc="Manages the portfolio of loans and the corresponding payments applied to these loans."
-    url="/projects/credinstante"
-    badge="NEW"
-    tech={['HTML', 'BOOSTRAP', 'LARAVEL','MYSQL','SQLSERVER','DOCKER']}
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="GUMANET Analyst FrontEnd and BackEnd Develope"
-    img="/app-02.png"
-    desc="Various dashboards that display relevant information for operational decision-making."
-    url="/projects/gumanet"
-    tech={['HTML', 'BOOSTRAP', 'LARAVEL','MYSQL','SQLSERVER','DOCKER']}
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="SAC Systems FrontEnd and BackEnd Developer"
-    img="/app-03.png"
-    desc="Platform for customer service, where orders are received and access is provided to inventory, customers, and other statistics."
-    url="/projects/sac"
-    tech={['HTML', 'BOOSTRAP', 'LARAVEL','MYSQL','SQLSERVER','DOCKER']}
-  />
-
-  <HorizontalCard
-    title="GMV Gestor Movil de Ventas"
-    img="/app-10.png"
-    desc="Through a Navita App on Android, the pre-sale order is sent to a WEB portal."
-    url="/projects/gmv"
-    tech={['ANDROID', 'JAVA', 'PHP','MYSQL','SQLSERVER','DOCKER']}
-  />
+  {
+    last_projects.map((project) => (
+      <>
+        <HorizontalCard
+          title={project.data.title}
+          img={project.data.heroImage}
+          desc={project.data.description}
+          url={"/projects/" + project.slug}
+          target="_self"
+          badge={project.data.badge}
+          tech={project.data.tags}
+          pubDate={project.data.pubDate}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
+  }
 
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
@@ -123,6 +110,7 @@ const last_posts = posts.slice(0, 3);
           url={"/blog/" + post.slug}
           target="_self"
           badge={post.data.badge}
+          pubDate={post.data.pubDate}
         />
         <div class="divider my-0" />
       </>

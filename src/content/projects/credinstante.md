@@ -1,9 +1,9 @@
 ---
 title: "Credinstante"
 description: "Manages the portfolio of loans and the corresponding payments applied to these loans."
-pubDate: "Nov 01 2023"
+pubDate: "Nov 20 2023"
 heroImage: "/app-01.png"
-# badge: "New"
+badge: "New"
 tags: ['HTML', 'BOOSTRAP', 'LARAVEL','MYSQL','DOCKER']
 ---
 Este Proyecto describe la arquitectura de una aplicación web desplegada en un servidor VPS de Hetzner. 

@@ -1,9 +1,8 @@
 ---
 title: "General Statistics"
 description: "Provides sales metrics for different sales teams within the company."
-pubDate: "Dec 22 2023"
+pubDate: "Oct 22 2022"
 heroImage: "/app-09.png"
-
 tags: ['HTML', 'BOOTSTRAP', 'LARAVEL', 'MYSQL', 'SQLSERVER', 'DOCKER']
 ---
 

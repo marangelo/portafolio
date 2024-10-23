@@ -8,20 +8,23 @@ const {
   tags, 
   target = "_blank" ,
   tech,
+  pubDate,
 } = Astro.props;
 
 import { Image } from "astro:assets";
+import dayjs from "dayjs";
+import localizedFormat from "dayjs/plugin/localizedFormat";
+dayjs.extend(localizedFormat);
+const displayDate = dayjs(pubDate).format("ll")
+
 
 const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
 ---
 
-<div
-  class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]"
->
+<div class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]">
   <a href={url} target={target}> 
     <div class="hero-content flex-col md:flex-row">
-      {
-        img && (
+      { img && (
           <Image
             src={img}
             width={750}
@@ -38,10 +41,10 @@ const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
           {badge && <div class="badge badge-secondary mx-2">{badge}</div>}
         </h1>
         <p class="py-1 text-1xl">{desc}</p>
+        <div class="text-sm opacity-50">{displayDate}</div>
         <div class="card-actions justify-end">
           {
-            tags &&
-              tags.map((tag) => (
+            tags && tags.map((tag) => (
                 <a href={`${tag_url}/${tag}`} class="badge badge-outline">
                   {tag}
                 </a>
@@ -50,11 +53,10 @@ const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
         </div>
         <div class="mt-4 flex flex-wrap gap-1">
           {
-            tech &&
-            tech.map((techItem) => (
+            tech && tech.map((techItem) => (
               <span class="rounded border border-indigo-500 bg-indigo-500 px-2.5 py-0.5 text-xs text-white">
-                {techItem}
-          </span>
+                  {techItem}
+              </span>
             ))
           }
 

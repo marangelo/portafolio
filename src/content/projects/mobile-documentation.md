@@ -1,7 +1,7 @@
 ---
 title: "Mobile Project Documentation"
 description: "A solution to provide user information access across different areas of the company."
-pubDate: "Dec 22 2023"
+pubDate: "Oct 20 2023"
 heroImage: "/app-05.png"
 
 tags: ['DOCKER COMPOSE', 'UBUNTU SERVER', 'NEXT CLOUD', 'MARIADB']
