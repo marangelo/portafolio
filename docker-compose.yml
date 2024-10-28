@@ -1,0 +1,6 @@
+services:
+  astro-app:
+    container_name: cn_astro-app
+    build: .
+    ports:
+      - '3000:4321'
