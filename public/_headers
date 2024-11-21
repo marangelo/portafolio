@@ -1,5 +1,0 @@
-/* 
-  Permissions-Policy: geolocation=(self), microphone=()
-  X-Content-Type-Options: nosniff
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';
-  
