@@ -20,7 +20,7 @@ Este Proyecto describe la arquitectura de una aplicación web desplegada en un s
 * **Smarterasp.net:** Gestiona los registros DNS, apuntando los dominios  
     `https://credinstantes.com`, `https://app.credinstantes.com` y `https://dev.credinstantes.com` al servidor VPS.
 * **Hetzner VPS:** Servidor virtual privado que aloja la aplicación y sus dependencias.
-   * **Recursos:** El VPS cuenta con 2 CPUs, 8GB de RAM, 80GB de almacenamiento y 20TB de tráfico mensual.
+   * **Recursos:** El VPS cuenta con 2 CPUs, 8GB de RAM, 80GB de almacenamiento y 1 TB de tráfico mensual.
    * **Docker:** Se utiliza Docker para contenerizar la aplicación y sus servicios. 
    * **Nginx Proxy Manager:** Actúa como un proxy inverso y balanceador de carga para las aplicaciones.
    * **Aplicaciones:** 
